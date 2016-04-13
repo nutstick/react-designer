@@ -20,7 +20,7 @@ class Preview extends Component {
   }
 
   render() {
-    let {width, height, objects, objectTypes} = this.props;
+    let {width, height, objects, objectTypes, background} = this.props;
 
     let style = {
       ...styles.container,
@@ -40,6 +40,7 @@ class Preview extends Component {
     return (
       <div className={'container'} style={style}>
         <SVGRenderer
+          background={background}
           width={width}
           height={height}
           objects={objects}
