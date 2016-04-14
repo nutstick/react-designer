@@ -25,8 +25,8 @@ class Preview extends Component {
     let style = {
       ...styles.container,
       ...this.props.style,
-      width: width,
-      height: height,
+      width: width+"mm",
+      height: height+"mm",
       padding: 0
    };
 

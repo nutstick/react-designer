@@ -41,8 +41,8 @@ class SVGRenderer extends Component {
     return (
       <svg onMouseDown={onMouseDown}
          ref={onRender}
-         width={width}
-         height={height}
+         width={width+"mm"}
+         height={height+"mm"}
          style={style}
          isRoot={true}
          >

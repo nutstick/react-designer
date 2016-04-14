@@ -544,8 +544,8 @@ class Designer extends Component {
              style={{
                 ...styles.container,
                 ...this.props.style,
-                width: canvasWidth,
-                height: canvasHeight,
+                width: canvasWidth+"mm",
+                height: canvasHeight+"mm",
                 padding: 0
              }}
              onMouseMove={this.onDrag.bind(this)}

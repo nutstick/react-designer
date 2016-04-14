@@ -21,7 +21,7 @@ class PanelList extends Component {
       left: offset.width + offset.x,
       top: offset.y + window.scrollY,
     };
-
+    console.log(style, offset.width, offset.x, typeof(offset.width), typeof(offset.x), offset.width + offset.x)
 
     return (
       <Portal className="propertyPanel" closeOnEsc closeOnOutsideClick isOpened={true}>
