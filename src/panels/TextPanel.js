@@ -64,7 +64,7 @@ export default class TextPanel extends Panel {
     // {name: 'Alegreya', family: 'Alegreya, serif'},
     // {name: 'Alegreya Sans', family: 'Alegreya Sans, sans-serif'},
     // {name: 'Fira Sans', family: 'Fira Sans, sans-serif'},
-    {name: 'Open Sans Condensed', family: 'Open Sans Condensed'},
+    {name: 'Open Sans Condensed', family: 'Open Sans Condensed:300'},
     {name: 'PT Sans', family: 'PT Sans'},
     {name: 'Muli', family: 'Muli'},
     {name: 'Nunito', family: 'Nunito'},
@@ -159,6 +159,12 @@ export default class TextPanel extends Panel {
                 <input style={[styles.input, styles.integerInput, {width: 35}]}
                        value={object.fontSize}
                        onChange={(e) => this.props.onChange('fontSize', e.target.value)} />}
+            </Column>
+            <Column style={{"float": "right"}} label="letter spacing">
+              {_.has(object, 'letterSpacing') &&
+                <input style={[styles.input, styles.integerInput, {width: 35}]}
+                       value={object.letterSpacing}
+                       onChange={(e) => this.props.onChange('letterSpacing', e.target.value)} />}
             </Column>
             <Column style={{"float": "right", marginRight: 10, padding: '3px 5px'}} label="choose font">
               <Autocomplete

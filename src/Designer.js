@@ -237,8 +237,8 @@ class Designer extends Component {
       ...this.state.handler,
       width: object.width || bbox.width,
       height: object.height || bbox.height,
-      top: object.y + canvasOffsetY,
-      left: object.x + canvasOffsetX,
+      top: parseFloat(object.y) + canvasOffsetY,
+      left: parseFloat(object.x) + canvasOffsetX,
       rotate: object.rotate
     };
 

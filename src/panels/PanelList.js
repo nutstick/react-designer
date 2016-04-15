@@ -18,10 +18,10 @@ class PanelList extends Component {
     let {object, offset, objectComponent, id} = this.props;
     // console.log(this.props)
     let style = {
-      left: offset.width + offset.x,
+      left: (offset.width*3.779528) + offset.x,
       top: offset.y + window.scrollY,
     };
-    console.log(style, offset.width, offset.x, typeof(offset.width), typeof(offset.x), offset.width + offset.x)
+    // console.log(style, offset.width, offset.x, typeof(offset.width), typeof(offset.x), offset.width + offset.x)
 
     return (
       <Portal className="propertyPanel" closeOnEsc closeOnOutsideClick isOpened={true}>

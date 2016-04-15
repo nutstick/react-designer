@@ -1,6 +1,7 @@
 export default {
   propertyPanel: {
-    position: "absolute",
+    // position: "absolute",
+    position: "fixed",
     width: 200,
     top: 0,
     left: 0,

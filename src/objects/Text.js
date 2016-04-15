@@ -10,14 +10,15 @@ export default class Text extends Vector {
   static meta = {
     icon: <Icon icon={'text'} size={30} />,
     initial: {
-      text: "I am a text object...",
+      text: "Hi! I'm a text object...",
       rotate: 0,
-      fontWeight: "normal",
-      fontStyle: "italic",
+      fontWeight: "bold",
+      fontStyle: "normal",
       textDecoration: "none",
       fill: "black",
-      fontSize: 20,
-      fontFamily: "Open Sans"
+      fontSize: 12,
+      fontFamily: "Open Sans",
+      letterSpacing: 0
     }
   };
 
@@ -30,7 +31,8 @@ export default class Text extends Vector {
       fontStyle: object.fontStyle,
       textDecoration: object.textDecoration,
       mixBlendMode: object.blendMode,
-      WebkitUserSelect: "none"
+      WebkitUserSelect: "none",
+      letterSpacing: object.letterSpacing
     };
   }
 
